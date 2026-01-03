@@ -19,5 +19,16 @@ Servlet:
 5.Display confirmation
 6.destroy() → close connection
 
+Database:
+CREATE DATABASE orderdb;
+
+USE orderdb;
+
+CREATE TABLE orders (
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
+    customer_name VARCHAR(100),
+    item_name VARCHAR(100),
+    quantity INT
+);
 
 
